@@ -1,0 +1,15 @@
+from datetime import date
+actualyear = date.today().year
+birthday = int(input('Type the year of your birthday: '))
+signin = (actualyear - birthday)
+print(signin)
+signinyear = (birthday + 18)
+
+if signin == 18:
+    print('you have to sign in immediately')
+elif signin > 18:
+    print('Your time had already passed baby, you getting old!!!')
+elif signin < 18:
+    print('Calm down baby, you have to wait for {}'.format(signinyear))
+else:
+    print('Something got wrong try again')

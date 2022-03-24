@@ -1,0 +1,10 @@
+#city = str(input('Type your city: ')).strip()
+#print(city[0:5].lower() == 'santo')
+
+fname = str(input('Type you full name: ')).upper().strip()
+print('silva'in fname.lower())
+print('The letter A appears {}'.format(fname.count('A')))
+print('The first letter appears at {}º position'.format(fname.find('A')+1))
+print('The last letter appears at {}º position'.format(fname.rfind('A')+1))
+separate = fname.split()
+print('Your first name is {} and your last name is {}'.format(separate[0], separate[len(separate)-1]))
