@@ -1,14 +1,14 @@
 value = []
 answer = 'Y'
 while answer in 'Yy':
-    value.append(int(input(f'Type a number {value}')))
-    if value.append() == value:
-
-        value.remove()
-    else:
-        print('nao esta na lista')
-    answer = str(input('Do you want to continue? [Y/N]')).strip().upper()[0]
-value.sort(value)
+   n = int(input('Type a number'))
+   if n not in value:
+       value.append(n)
+   else:
+       print('Duplicate number, try another')
+   answer = str(input('Do you want to continue? [Y/N]')).strip().upper()[0]
+print(f'You have typed {value}')
+value.sort()
 
 sleep (3)
 num[2] = 3
